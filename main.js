@@ -5,9 +5,11 @@ var cbtn = document.getElementById("cButton");
 var spanner = document.getElementsByClassName("close")[0];
 
 // This particular line of code is so that when the user clicks the button, the modal pops up. //
-cbtn.onclick = function(){
+function mode(){
   modal.style.display = "inline-block";
 }
+
+cbtn.addEventListener("click", mode);
 // This particular line of code is so that when the user clicks the X button, the modal no longer displays. //
 spanner.onclick = function(){
   modal.style.display = "none";
